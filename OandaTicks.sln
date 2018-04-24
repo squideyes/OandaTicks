@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{FC4B7737-01E7-448F-9BA6-D088D8321008}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "License", "License", "{12F49E74-03DE-42ED-908D-B9DC332768FF}"
+	ProjectSection(SolutionItems) = preProject
+		License\License.txt = License\License.txt
+		License\OandaTicks.licenseheader = License\OandaTicks.licenseheader
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{3C929092-F011-496A-8CB5-84B262039B95}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OandaTicks.Common", "Source\OandaTicks.Common\OandaTicks.Common.csproj", "{6C8614AF-9D09-4C65-B823-159F6FCB1EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OandaTicks.Library", "Source\OandaTicks.Library\OandaTicks.Library.csproj", "{405F82D0-EAAD-4B8D-8116-5A29B0764AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OandaTicks.WinService", "Source\OandaTicks.Service\OandaTicks.WinService.csproj", "{0E4AE58B-853B-4B08-9EA3-74BE56B13CC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C8614AF-9D09-4C65-B823-159F6FCB1EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8614AF-9D09-4C65-B823-159F6FCB1EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8614AF-9D09-4C65-B823-159F6FCB1EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8614AF-9D09-4C65-B823-159F6FCB1EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405F82D0-EAAD-4B8D-8116-5A29B0764AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405F82D0-EAAD-4B8D-8116-5A29B0764AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405F82D0-EAAD-4B8D-8116-5A29B0764AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405F82D0-EAAD-4B8D-8116-5A29B0764AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4AE58B-853B-4B08-9EA3-74BE56B13CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4AE58B-853B-4B08-9EA3-74BE56B13CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4AE58B-853B-4B08-9EA3-74BE56B13CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4AE58B-853B-4B08-9EA3-74BE56B13CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C8614AF-9D09-4C65-B823-159F6FCB1EFD} = {FC4B7737-01E7-448F-9BA6-D088D8321008}
+		{405F82D0-EAAD-4B8D-8116-5A29B0764AC1} = {FC4B7737-01E7-448F-9BA6-D088D8321008}
+		{0E4AE58B-853B-4B08-9EA3-74BE56B13CC9} = {FC4B7737-01E7-448F-9BA6-D088D8321008}
+	EndGlobalSection
+EndGlobal

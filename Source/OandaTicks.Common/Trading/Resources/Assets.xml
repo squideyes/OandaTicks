@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright 2017 Louis S. Berman.
+
+This file is part of OandaTicks.
+
+OandaTicks is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+OandaTicks is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with OandaTicks.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<assets>
+  <asset symbol="AUDUSD"
+         kind="Forex"
+         precision="5"
+         pipLocation="-4"
+         isMajor="True"
+         baseCurrency="AUD"
+         quoteCurrency="USD" />
+  <asset symbol="EURUSD"
+         kind="Forex"
+         precision="5"
+         pipLocation="-4"
+         isMajor="True"
+         baseCurrency="EUR"
+         quoteCurrency="USD" />
+  <asset symbol="GBPUSD"
+         kind="Forex"
+         precision="5"
+         pipLocation="-4" 
+         isMajor="True"
+         baseCurrency="GBP"
+         quoteCurrency="USD"/>
+  <asset symbol="NZDUSD"
+         kind="Forex"
+         precision="5"
+         pipLocation="-4"
+         isMajor="False"
+         baseCurrency="NZD"
+         quoteCurrency="USD" />
+  <asset symbol="USDCAD"
+         kind="Forex"
+         precision="5"
+         pipLocation="-4"
+         isMajor="True"
+         baseCurrency="USD"
+         quoteCurrency="CAD" />
+  <asset symbol="USDCHF"
+         kind="Forex"
+         precision="5"
+         pipLocation="-4"
+         isMajor="True"
+         baseCurrency="USD"
+         quoteCurrency="CHF" />
+  <asset symbol="USDJPY"
+         kind="Forex"
+         precision="3"
+         pipLocation="-2" 
+         isMajor="True"
+         baseCurrency="USD"
+         quoteCurrency="JPY" />
+</assets>

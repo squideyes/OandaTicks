@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C8614AF-9D09-4C65-B823-159F6FCB1EFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OandaTicks.Common</RootNamespace>
+    <AssemblyName>OandaTicks.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NodaTime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NodaTime.2.0.0\lib\net45\NodaTime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\Collections\EnumList.cs" />
+    <Compile Include="Helpers\EventArgs\GenericArgs.cs" />
+    <Compile Include="Helpers\Exceptions\SafeConfigException.cs" />
+    <Compile Include="Helpers\Exceptions\ValidationException.cs" />
+    <Compile Include="Helpers\Extenders\AssemblyExtenders.cs" />
+    <Compile Include="Helpers\Extenders\DateTimeExtenders.cs" />
+    <Compile Include="Helpers\Extenders\EnumExtenders.cs" />
+    <Compile Include="Helpers\Extenders\IComparableExtenders.cs" />
+    <Compile Include="Helpers\Extenders\IEnumerableExtenders.cs" />
+    <Compile Include="Helpers\Extenders\IListExtenders.cs" />
+    <Compile Include="Helpers\Extenders\StringExtenders.cs" />
+    <Compile Include="Helpers\Extenders\TypeExtenders.cs" />
+    <Compile Include="Helpers\Extenders\ValidationExtenders.cs" />
+    <Compile Include="Helpers\MiscHelpers\AppInfo.cs" />
+    <Compile Include="Helpers\MiscHelpers\Lambda.cs" />
+    <Compile Include="Helpers\MiscHelpers\SafeConfig.cs" />
+    <Compile Include="Helpers\Primatives\MinMax.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Trading\Consts\WellKnown.cs" />
+    <Compile Include="Trading\Enums\AssetKind.cs" />
+    <Compile Include="Trading\Enums\BrokerKind.cs" />
+    <Compile Include="Trading\Enums\BuyOrSell.cs" />
+    <Compile Include="Trading\Enums\Currency.cs" />
+    <Compile Include="Trading\Enums\OrderKind.cs" />
+    <Compile Include="Trading\Enums\PriceToUse.cs" />
+    <Compile Include="Trading\Enums\Symbol.cs" />
+    <Compile Include="Trading\Enums\TimeInForce.cs" />
+    <Compile Include="Trading\Enums\Trend.cs" />
+    <Compile Include="Trading\Extenders\DateTimeExtenders.cs" />
+    <Compile Include="Trading\Extenders\DoubleExtenders.cs" />
+    <Compile Include="Trading\Helpers\WickoFeed.cs" />
+    <Compile Include="Trading\Primatives\Asset.cs" />
+    <Compile Include="Trading\Primatives\BidAsk.cs" />
+    <Compile Include="Trading\Primatives\Bucket.cs" />
+    <Compile Include="Trading\Primatives\Wicko.cs" />
+    <Compile Include="Trading\Scenarios\ScenarioBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\License\OandaTicks.licenseheader">
+      <Link>OandaTicks.licenseheader</Link>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Trading\Resources\Assets.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
